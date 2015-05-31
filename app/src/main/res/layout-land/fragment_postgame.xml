@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/goodGame"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numCorrect"
+        android:layout_below="@+id/goodGame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"
+        android:textColor="#FFF"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timePenalty"
+        android:layout_below="@+id/numCorrect"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:textColor="#FFF"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/elapsedTime"
+        android:textColor="#FFF"
+        android:textStyle="italic"
+        android:layout_below="@+id/timePenalty"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="17sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Menu"
+        android:id="@+id/returnHome"
+        android:layout_below="@+id/elapsedTime"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="120dp"
+        android:height="75dp"
+        android:width="150dp"
+        android:textColor="@color/blueGrey800"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Try Again!"
+        android:id="@+id/playAgain"
+        android:height="75dp"
+        android:width="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/elapsedTime"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="120dp"
+        android:textColor="@color/blueGrey800"/>
+</RelativeLayout>
